@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: left;
+}
+
+.list__item {
+  padding: 6px 12px;
+  
+  border: 1px solid #eeeeee;
+
+  cursor: pointer;
+}
+
+.list__item:not(.list__item:last-child) {
+  border-bottom: 0;
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  right: -320px;
+
+  max-width: 300px;
+
+  border: 1px solid #eeeeee;
+}
+
+.details__info__item {
+  padding: 8px 12px;
+}
+
+.details__info__item:not(:last-child) {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.details__info__name {
+  font-size: 22px;
+  font-weight: 600;
+}
