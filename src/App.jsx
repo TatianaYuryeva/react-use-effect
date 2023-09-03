@@ -23,7 +23,7 @@ function App() {
     <>
       <div className="wrapper">
         <List users={users} onSelectUser={setInfo}/>
-        {info.id ? <Details info={info}/> : undefined}
+        {info.id && <Details info={info}/>}
       </div>
     </>
   )
